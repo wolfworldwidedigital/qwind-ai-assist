@@ -10,10 +10,16 @@ import CallToAction from "~/components/widgets/CallToAction";
 
 import { qwikSerialized } from "~/utils/qwikSerialized";
 
-const IconBrandTailwind = qwikSerialized(() => import("../components/icons/IconBrandTailwind"));
+const IconBrandTailwind = qwikSerialized(
+  () => import("../components/icons/IconBrandTailwind"),
+);
 const IconApps = qwikSerialized(() => import("../components/icons/IconApps"));
-const IconRocket = qwikSerialized(() => import("../components/icons/IconRocket"));
-const IconBrandGoogle = qwikSerialized(() => import("../components/icons/IconBrandGoogle"));
+const IconRocket = qwikSerialized(
+  () => import("../components/icons/IconRocket"),
+);
+const IconBrandGoogle = qwikSerialized(
+  () => import("../components/icons/IconBrandGoogle"),
+);
 const IconBulb = qwikSerialized(() => import("../components/icons/IconBulb"));
 
 import { SITE } from "~/config.mjs";
@@ -24,43 +30,43 @@ export default component$(() => {
       <Hero />
       <Features
         highlight="Features"
-        title="What you get with Qwind"
-        subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+        title="What AI0-Assist means to your company"
+        subtitle="One of the key advantages of AI-Assist is its lightning-fast response time. Our software guarantees a maximum reply time of 200 seconds to answer any customer question. In comparison, the average human takes approximately 5 minutes to respond to a customer inquiry. With AI-Assist, your customers will experience prompt and efficient support, leading to higher satisfaction rates."
         items={[
           {
-            title: "Qwik + Tailwind CSS Integration",
+            title: "Response Time",
             description:
-              "A seamless integration between two great frameworks that offer high productivity, performance and versatility.",
+              "One of the key advantages of AI-Assist is its lightning-fast response time. Our software guarantees a maximum reply time of 200 seconds to answer any customer question. In comparison, the average human takes approximately 5 minutes to respond to a customer inquiry. With AI-Assist, your customers will experience prompt and efficient support, leading to higher satisfaction rates.",
             icon: IconBrandTailwind,
           },
           {
-            title: "Ready-to-use Components",
+            title: "Affordable Cost",
             description:
-              "Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...",
+              "Investing in an AI customer assistant can significantly reduce costs compared to traditional customer service personnel. Our custom AI agents are priced at only €0.40 - €0.50 per ticket for automated responses. In contrast, hiring customer service personnel can cost you between €0.75 and €1.00 per ticket. By leveraging AI-Assist, you can save on operational expenses while maintaining excellent customer support.",
             icon: IconApps,
           },
           {
-            title: "Best Practices",
+            title: "Multilingual Support",
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.",
+              "Our AI software understands every language worldwide. It quickly recognizes the language of the question and responds in the same language, all within 200 seconds.",
           },
           {
-            title: "Excellent Page Speed",
+            title: "Excellent Custom Replies",
             description:
-              "Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.",
+              "With our AI software, language will no longer be a barrier in providing customer service. AI-Assist understands and responds in every language worldwide, recognizing the language of the customer's question and replying in the same language. This level of multilingual support far surpasses the capabilities of an average human, who can typically speak and understand only 2 to 4 different languages. By utilizing AI-Assist, you can seamlessly scale your business across multiple countries.",
             icon: IconRocket,
           },
           {
-            title: "Search Engine Optimization (SEO)",
+            title: "Automated Request Analysis",
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.",
+              "Our AI software analyzes your customers' questions and scans for key details such as their name, email, phone number, or order number.",
             icon: IconBrandGoogle,
           },
           {
-            title: "Open to new ideas and contributions",
+            title: "Integrated Data Crossing",
             description:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.",
-            icon: IconBulb
+            icon: IconBulb,
           },
         ]}
       />
@@ -96,7 +102,8 @@ export default component$(() => {
               "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
           },
           {
-            title: "If you could only ask one question to each person you meet, what would that question be?",
+            title:
+              "If you could only ask one question to each person you meet, what would that question be?",
             description:
               "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
           },

@@ -14,7 +14,7 @@ const load = () => {
       .map(async (filename) => {
         const slug = filename.replace(".md", "");
         return await findPostBySlug(slug);
-      })
+      }),
     // .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   );
 
@@ -46,12 +46,17 @@ export const fetchPosts = async (): Promise<Post[]> => {
 };
 
 /** */
-export const findLatestPosts = async ({ count, page }: { count?: number; page?: number } = {}): Promise<Post[]> => {
+export const findLatestPosts = async ({
+  count,
+  page,
+}: { count?: number; page?: number } = {}): Promise<Post[]> => {
   const _count = count || 4;
   const _page = page || 1;
   const posts = await fetchPosts();
 
-  return Array.isArray(posts) ? posts.slice((_page - 1) * _count, (_page - 1) * _count + _count) : [];
+  return Array.isArray(posts)
+    ? posts.slice((_page - 1) * _count, (_page - 1) * _count + _count)
+    : [];
 };
 
 /** */
@@ -97,7 +102,7 @@ export const findPostBySlug = async (slug: string): Promise<Post | null> => {
 
       metadata,
 
-      content
+      content,
     };
   } catch (e) {
     /* empty */

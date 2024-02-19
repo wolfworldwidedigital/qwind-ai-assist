@@ -1,7 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 
-import type { DocumentHead, StaticGenerateHandler } from "@builder.io/qwik-city";
+import type {
+  DocumentHead,
+  StaticGenerateHandler,
+} from "@builder.io/qwik-city";
 import type { Post } from "~/types";
 
 import md from "markdown-it";
